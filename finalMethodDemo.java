@@ -5,7 +5,7 @@ class finalDemo {
 }
    public class finalMethodDemo extends finalDemo{
 //        void display(){
-//          System.out.println("");
+//          System.out.println("Comment this method to avoid error");
 //        }
 /* As display is a Final method, it cant be overriding
 If you uncomment lines 7-9,this program will throw Compile time Error*/
