@@ -1,4 +1,4 @@
-class ClassDemo {
+final class ClassDemo {
     void display(){
         System.out.println("This is Demo of using Final Method");
     }
