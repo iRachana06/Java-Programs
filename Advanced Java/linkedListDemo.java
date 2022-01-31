@@ -8,8 +8,8 @@ public class linkedListDemo {
 
         linkedlist.add("India"); // Adding elements to the linked list
         linkedlist.add("USA");
-        linkedlist.addLast("Australia"); // Adding element to beginning the linked list
-        linkedlist.addFirst("England"); // Adding elements to the end of linked list
+        linkedlist.addLast("Australia"); // Adding element to the end the linked list
+        linkedlist.addFirst("England"); // Adding elements to beginning of linked list
         linkedlist.add(2, "Japan"); //Adding elements at a particular index in the linked list
 
         System.out.println(linkedlist);
