@@ -18,7 +18,7 @@ public class linkedListMethodsDemo {
         System.out.println("Head of the list is : " + linkedlist.peek());
         //peekFirst and peekLast methods also used to remove first and last element respectively
 
-        //Offer -  This method adds the specified element as the tail (last element) of this list.
+        //Offer -  This method adds the specified element as the tail / last element of a list
         linkedlist.offer("UK"); //offerFirst and offerLast methods also used
 
         String popELement = linkedlist.pop(); //Pop Method - to remove and return the top element from the Linked List
