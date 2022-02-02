@@ -19,6 +19,7 @@ public class splitIteratorDemo {
 
         System.out.println("----Split Iterator 1----");
         spliterator1.forEachRemaining(System.out::println);
+        //forEachRemaining() - introduced in Java 8 : make the iteration code more concise
 
         System.out.println("----Split Iterator 2----");
         spliterator2.forEachRemaining(System.out::println);
