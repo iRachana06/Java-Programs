@@ -22,6 +22,6 @@ public class HashMapDemo{
 
         map.replace(2,"SQL");
         map.replace(3, "CSS", "HTML");
-        System.out.println("Updated list of replacing elements in Hashmap: "+map);
+        System.out.println("Updated list - replacing elements in Hashmap: "+map);
     }
 }
