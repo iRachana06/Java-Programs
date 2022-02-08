@@ -1,12 +1,12 @@
-name : Workflow demo with Shell commands
-on : [push, pull_request]
+name : Workflow-demo
+on : [push, pull_request]  #Events which will trigger the workflow
 jobs:
-  shell-command-demo:
-    runs-on: ubuntu-latest
+  shell-command-demo:       #Name of job
+    runs-on: ubuntu-latest  #Name of virtual machine on which job runs
     steps:
-      - name : helloworld
-        run: echo "Hello World"
-      - name: multiline script
-        run: |
+      - name : print-message #Name of step
+        run: echo "Hello World" #Command to run
+      - name: running-multiline-scripts
+        run: |     # Using pipe symbol, we can preserve new line and run multiple commands
           node -v
-          npm -v
+          java -v
