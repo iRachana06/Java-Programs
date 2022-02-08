@@ -9,4 +9,4 @@ jobs:
       - name: running-multiline-scripts
         run: |     # Using pipe symbol, we can preserve new line and run multiple commands
           node -v
-          java -v
+          npm -v
