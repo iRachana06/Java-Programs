@@ -1,0 +1,12 @@
+name : Workflow demo with Shell commands
+on : [push, pull_request]
+jobs:
+  shell-command-demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name : helloworld
+        run: echo "Hello World"
+      - name: multiline script
+        run: |
+          node -v
+          npm -v
