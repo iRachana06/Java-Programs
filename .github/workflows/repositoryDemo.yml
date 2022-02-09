@@ -2,7 +2,7 @@ name : Actions-demo
 on :
   repository_dispatch:
     types: [build]
-    push :
+  push
 jobs:
   checkout-actions-demo:       #Name of job
     runs-on: ubuntu-latest  #Name of virtual machine on which job runs
