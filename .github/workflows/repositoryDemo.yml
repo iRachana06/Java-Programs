@@ -1,0 +1,19 @@
+name : Actions-demo
+on :
+  repository_dispatch:
+    types: [build]
+    push : #Events which will trigger the workflow
+jobs:
+  checkout-actions-demo:       #Name of job
+    runs-on: ubuntu-latest  #Name of virtual machine on which job runs
+    steps:
+      #      - name : checkout-action #Name of step
+      #        uses: actions/checkout@v1 #This action will clone repository to your repo
+      - name: github-action-1 #Name of step
+        id: job1
+        uses: actions/hello-world-javascript-action@v1 #Command to run
+        with:
+          who-to-greet: Rachanaa #input parameter
+      - name: github-action-2 #Name of step
+        run : echo "${{ steps.job1.outputs.time }}" #Using output from previous job
+        #time is the output provided by previous job with job id job1
