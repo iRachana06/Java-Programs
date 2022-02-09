@@ -1,6 +1,5 @@
 name : Actions-demo
-on :
-  repository_dispatch
+on : repository_dispatch
 jobs:
   checkout-actions-demo:       #Name of job
     runs-on: ubuntu-latest  #Name of virtual machine on which job runs
