@@ -1,12 +1,11 @@
-name : Actions-demo
+name : Manual-Trigger-demo
 on : repository_dispatch
 jobs:
-  checkout-actions-demo:       #Name of job
+  manual-trigger-demo:       #Name of job
     runs-on: ubuntu-latest  #Name of virtual machine on which job runs
     steps:
       - name: manual-trigger1 #Name of step
         id: job1
-        uses: actions/hello-world-javascript-action@v1 #Command to run
-        with:
-          who-to-greet: Rachanaa #input parameter
-  
+        run: |
+          pwd
+          echo ${{github.event.client_payload.msg}}
