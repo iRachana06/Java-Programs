@@ -4,10 +4,9 @@ jobs:
   checkout-actions-demo:       #Name of job
     runs-on: ubuntu-latest  #Name of virtual machine on which job runs
     steps:
-      - name: github-action-1 #Name of step
+      - name: manual-trigger1 #Name of step
         id: job1
         uses: actions/hello-world-javascript-action@v1 #Command to run
         with:
           who-to-greet: Rachanaa #input parameter
-      - name: github-action-2 #Name of step
-        run : echo "${{ steps.job1.outputs.time }}" #Using output from previous job
+  
