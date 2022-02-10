@@ -1,6 +1,6 @@
 name : branch-condition-demo
 on:
-  pull_request:
+  - push:
     - master
     - pr-fix
 jobs:
