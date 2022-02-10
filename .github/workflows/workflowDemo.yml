@@ -6,10 +6,8 @@ on:
       - 'pr-*' #if branch name matches with at max 1 / in name Eg: pr-fix1/fix1
       - '!pr-**' #can support 2 / - ie., here not equal
     #can also use branches ignore
-    tags:
-      - v1.*
-    paths-ignore : #dont run this workflow if .java file is pushed
-      - '**.java'
+    paths-ignore:
+      - '**.md' #dont run this workflow if .java file is pushed
 jobs:
   shell-command-demo:       #Name of job
     runs-on: ubuntu-latest  #Name of virtual machine on which job runs
