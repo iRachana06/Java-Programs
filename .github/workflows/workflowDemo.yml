@@ -2,7 +2,7 @@ name : branch-condition-demo
 on:
   pull_request:
     - master
-    - fix-pr
+    - pr-fix
 jobs:
   shell-command-demo:       #Name of job
     runs-on: ubuntu-latest  #Name of virtual machine on which job runs
