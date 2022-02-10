@@ -1,12 +1,5 @@
 name : branch-condition-demo
-on: [push,pull_request]
-  - branches:
-    - master
-    - 'fix/*' # Trigger any branch starting with fix but doesnt match '/'
-    - 'fix/**' #fix/branch/b1 will also be supported
-    #can also use branches-ignore if you want to ignore a branch - but cant use branches & branches-ignore together
-  tags:
-    - v1.*
+on: [push, pull_request]
 jobs:
   shell-command-demo:       #Name of job
     runs-on: ubuntu-latest  #Name of virtual machine on which job runs
