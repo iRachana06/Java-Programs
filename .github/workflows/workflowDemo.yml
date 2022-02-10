@@ -1,5 +1,11 @@
-name : Workflow-demo
-on : [push, pull_request]  #Events which will trigger the workflow
+name : branch-condition-demo
+on : #[push, pull_request]  #Events which will trigger the workflow
+  push :
+    branches :
+      - master
+      - 'fix/*' # Trigger any branch starting with fix but doesnt match '/'
+      - 'fix/**' #fix/branch/b1 will also be supported
+    #can also use branches-ignore if you want to ignore a branch - but cant use branches & branches-ignore together
 jobs:
   shell-command-demo:       #Name of job
     runs-on: ubuntu-latest  #Name of virtual machine on which job runs
