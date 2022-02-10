@@ -1,6 +1,5 @@
 name : Actions-demo
-on :
-  repository_dispatch: []  #Events which will trigger the workflow
+on : [push, pull_request]  #Events which will trigger the workflow
 jobs:
   checkout-actions-demo:       #Name of job
     runs-on: ubuntu-latest  #Name of virtual machine on which job runs
