@@ -8,8 +8,7 @@ on:
     #can also use branches ignore
     paths_ignore: #dont run this workflow if .java file is pushed
       - '**.java'
-  tags:
-      - v1.*
+
 jobs:
   shell-command-demo:       #Name of job
     runs-on: ubuntu-latest  #Name of virtual machine on which job runs
