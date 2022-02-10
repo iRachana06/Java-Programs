@@ -1,5 +1,18 @@
-name : Workflow-demo
-on : [push, pull_request]  #Events which will trigger the workflow
+name : branch-condition-demo
+on:
+  push:
+    branches:
+      - master
+      - 'pr-*' #if branch name matches with at max 1 / in name Eg: pr-fix1/fix1
+    tags:
+      - v1.*
+    paths-ignore:
+      - '**.md' #dont run this workflow if .md or .java file is pushed
+      - '**.java'
+  pull_request:
+    paths-ignore:
+      - '**.md'
+
 jobs:
   shell-command-demo:       #Name of job
     runs-on: ubuntu-latest  #Name of virtual machine on which job runs
