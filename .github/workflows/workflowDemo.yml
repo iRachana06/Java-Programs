@@ -2,7 +2,7 @@ name : branch-condition-demo
 on:
   push:
     branches:
-      - master
+      - main
       - 'fix/*' # Trigger any branch starting with fix but doesnt match '/'
       - 'fix/**' #fix/branch/b1 will also be supported
     #can also use branches-ignore if you want to ignore a branch - but cant use branches & branches-ignore together
