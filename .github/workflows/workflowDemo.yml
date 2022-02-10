@@ -1,5 +1,7 @@
 name : branch-condition-demo
-on: [push, pull_request]
+on:
+  push:
+    - master
 jobs:
   shell-command-demo:       #Name of job
     runs-on: ubuntu-latest  #Name of virtual machine on which job runs
