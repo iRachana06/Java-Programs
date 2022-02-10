@@ -9,6 +9,9 @@ on:
     paths-ignore:
       - '**.md' #dont run this workflow if .md or .java file is pushed
       - '**.java'
+  pull_request:
+    paths-ignore:
+      - '**.md'
 
 jobs:
   shell-command-demo:       #Name of job
