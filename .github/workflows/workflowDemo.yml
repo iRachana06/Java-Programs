@@ -1,8 +1,9 @@
 name : branch-condition-demo
 on:
   push:
-    master
-    pr-fix
+    branches:
+      - master
+      - pr-fix
 jobs:
   shell-command-demo:       #Name of job
     runs-on: ubuntu-latest  #Name of virtual machine on which job runs
