@@ -1,7 +1,7 @@
 name : branch-condition-demo
-on : #[push, pull_request]  #Events which will trigger the workflow
-  push :
-    branches :
+on: #[push, pull_request]  Events which will trigger the workflow
+  push:
+    branches:
       - master
       - 'fix/*' # Trigger any branch starting with fix but doesnt match '/'
       - 'fix/**' #fix/branch/b1 will also be supported
