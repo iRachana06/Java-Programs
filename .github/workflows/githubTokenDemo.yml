@@ -1,5 +1,5 @@
 name: Pull request labeler
-on: [ pull_request ]
+on: [ pull_request_target ]
 
 permissions:
   contents: read
@@ -9,8 +9,9 @@ jobs:
   triage:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/labeler@v2
+      - uses: actions/labeler@v3.0.2
         #This workflow makes use of prewritten action labeler
         #It automatically labels new pull requests based on the paths of files being changed
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }} #Using Github_Token as input parameter
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          #Using Github_Token as input parameter to authenticate to repo
