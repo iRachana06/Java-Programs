@@ -14,4 +14,4 @@ jobs:
         #It automatically labels new pull requests based on the paths of files being changed
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          #Using Github_Token as input parameter to authenticate to repo
+          #Using Github_Token as input parameter to authenticate to repository of used action
