@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/labeler@v3
-        #This workflow makes use of a prewritten github-action labeler
+        #This workflow makes use of a pre-written github-action labeler
         #This action automatically labels new pull requests based on the paths of files being changed
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token: ${{ secrets.SECRET_TOKEN }}
           #Using Github_Token as input parameter to authenticate to repository of used action
