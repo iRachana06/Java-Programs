@@ -9,7 +9,7 @@ jobs:
   triage:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/labeler@v3.0.2
+      - uses: actions/labeler@v3
         #This workflow makes use of a prewritten github-action labeler
         #This action automatically labels new pull requests based on the paths of files being changed
         with:
