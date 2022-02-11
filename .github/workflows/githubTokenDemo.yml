@@ -6,9 +6,9 @@ permissions:
   pull-requests: write
 
 jobs:
-  triage:
+  gosetup:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/labeler@v3
+      - uses: actions/setup-go@v2.2.0
         with:
-          repo-token: $ {{secrets.SECRET_TOKEN}}
+          token: $ {{secrets.SECRET_TOKEN}}
